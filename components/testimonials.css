@@ -1,0 +1,34 @@
+.carousel-btn {
+    font-size: 2rem;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.testimonials {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonial:not(.testimonial:first-child) {
+    opacity: 0;
+}
+
+.testimonial {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    transition: translate 500ms ease-in, opacity 2s ease-in;
+}

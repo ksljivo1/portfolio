@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: #130c24;
+    --primary: #f2d544;
+    --black: #232020;
+    --beige: #f5f5f1;
+    --gray: #999999;
+    --text-color: white;
+    --light-icon: white;
+    --gray-dark: #666666;
+    --gray-light: #bdbdbd;
+    --dark-icon: var(--black);
+    --anchor-color: var(--primary);
+    --gap: 5rem;
+}
+
+html.light-theme {
+    background-color: var(--beige);
+    --text-color: var(--black);
+    --gray-light: var(--gray-dark);
+    --light-icon: var(--black);
+    --dark-icon: white;
+    --anchor-color: var(--black);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+html {
+    background-color: var(--dark-blue);
+    color: var(--text-color);
+}
+
+html ::selection {
+    background-color: var(--primary);
+    color: var(--black);
+}
+
+input, textarea, button, select {
+    font: inherit;
+}
+
+@media (width <= 37.5rem) {
+    :root {
+        --gap: 1.875rem;
+    }
+
+    html {
+        font-size: 70%;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}

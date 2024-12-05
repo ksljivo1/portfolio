@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="color-scheme" content="dark light">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <title>Kerim Šljivo | Portfolio</title>
+    <meta name="title" content="Kerim Šljivo - Portfolio" />
+    <meta name="description" content="Welcome to my portfolio! Explore my projects, skills, and experience in programming, mathematics, and tutoring. Let's connect and collaborate!" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<script src="setCarousel.js"></script>
+    <nav>
+        <div class="container">
+            <div class="nav">
+                <img src="https://res.cloudinary.com/dbfn5lnvx/image/upload/v1648478885/learnhtmlcss/portfolio/logo.svg" alt="Sam Green logo" width="45" height="43" />
+                <ul class="nav-links">
+                    <li><a class="btn btn--nav" href="#about-me">About me</a></li>
+                    <li><a class="btn btn--nav" href="#portfolio">Portfolio</a></li>
+                    <li><a class="btn btn--nav" href="#experience">Experience</a></li>
+                    <li><a class="btn btn--nav" href="#testimonials">Testimonials</a></li>
+                    <li><a class="btn btn--raised" href="#hire-me">Hire me</a></li>
+                </ul>
+            </div>
+        </div>
+        <button aria-label="Toggle dark theme" id="toggle-theme">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                enable-background="new 0 0 24 24"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="var(--light-icon)"
+            >
+                <rect fill="none" height="24" width="24" />
+                <path
+                        d="M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26 c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"
+                />
+            </svg>
+        </button>
+    </nav>
+    <main>
+        <section class="layout-section" id="intro" aria-describedby="intro-h1 intro-h2">
+            <div class="container">
+                <h1 id="intro-h1" class="title--lg">Kerim Šljivo</h1>
+                <h2 id="intro-h2" class="title--lg">Web Developer</h2>
+                <p class="text--xl">Kerim is a web developer based in Sarajevo.</p>
+                <p class="text--xl">Kerim brings your idea to life with <strong>modern technology</strong>.</p>
+            </div>
+            <button id="scroll-down" aria-label="Scroll down">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     height="48px"
+                     viewBox="0 0 24 24"
+                     width="48px">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z" stroke="var(--light-icon)" />
+                </svg>
+            </button>
+        </section>
+        <section id="about-me" class="layout-section" aria-labelledby="heading-aboutme">
+            <div class="container">
+                <h2 id="heading-aboutme" class="title--sm layout-section-title">About me</h2>
+                <div class="layout-grid-half">
+                    <p class="text--lg">
+                        I am a final-year student at the Faculty of Electrical Engineering in Sarajevo, specializing in computer science and mathematics. With over three years of tutoring experience, I have helped over 30 students excel in subjects such as programming, algorithms, databases, and mathematics.
+                    </p>
+                    <p class="text--lg">
+                        In addition to tutoring, I developed several applications as part of course projects during my studies, as well as independently.
+                    </p>
+                    <p class="text--lg">
+                        I work with students and individuals, offering guidance and technical expertise to bring ideas to life. With a keen eye for detail and a focus on quality, I ensure every project or lesson achieves its full potential.
+                    </p>
+                    <p class="text--lg">
+                        Curious to know more? Check out my
+                        <a href="#portfolio">portfolio</a>
+                        or
+                        <a href="#hire-me">hire me</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="layout-section" aria-labelledby="heading-portfolio">
+            <div class="container">
+                <h2 id="heading-portfolio" class="title--sm layout-section-title">Portfolio</h2>
+                <div class="portfolio">
+                    <img
+                            src="assets/calculator.jpg"
+                            width="300"
+                            height="300"
+                            alt="Calculator app"
+                            class="portfolio-screenshot"
+                    />
+                    <div>
+                        <h3 class="title">Calculator app</h3>
+                        <p class="text">
+                            Mathematics is a daily necessity, whether for personal or professional use.
+                            That’s why I developed this Java-based Calculator app.
+                            Beyond basic calculations, it supports advanced features like graphing functions,
+                            making it an essential tool for solving equations, visualizing data, and exploring mathematical concepts with ease.
+                        </p>
+                        <a href="https://github.com/ksljivo1/Digitron" class="btn btn--line" target="_blank">Visit</a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img
+                            src="assets/detection_ongoing.gif"
+                            width="300"
+                            height="300"
+                            alt="Motion detection app"
+                            class="portfolio-screenshot"
+                    />
+                    <div>
+                        <h3 class="title">Motion detection app</h3>
+                        <p class="text">
+                            Understanding movement is key in many modern applications.
+                            That’s why I developed Motion Detection app using frame differencing method.
+                            It efficiently detects and highlights movement in video feeds,
+                            making it a valuable tool for surveillance, activity monitoring,
+                            and studying dynamic environments.
+                        </p>
+                        <a href="https://github.com/ksljivo1/Motion-detection-project" class="btn btn--line" target="_blank">Visit</a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img
+                            src="https://res.cloudinary.com/dbfn5lnvx/image/upload/v1648478885/learnhtmlcss/portfolio/project-2.jpg"
+                            width="300"
+                            height="300"
+                            alt="Todo app"
+                            class="portfolio-screenshot"
+                    />
+                    <div>
+                        <h3 class="title">Todo app</h3>
+                        <p class="text">
+                            Having goals is a must in every day life.
+                            This is why I created this Todo app that I
+                            use every workday to plan my tasks ahead.
+                        </p>
+                        <a href="https://react-course-todo-app.netlify.app/" class="btn btn--line" target="_blank">Visit</a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img
+                            src="assets/vehicle-monitoring.jpg"
+                            width="300"
+                            height="300"
+                            alt="Vehicle monitoring"
+                            class="portfolio-screenshot"
+                    />
+                    <div>
+                        <h3 class="title">Vehicle monitoring app</h3>
+                        <p class="text">
+                            Efficient transportation management requires accurate tracking and analysis.
+                            As part of a team, I contributed to developing this Vehicle monitoring app.
+                            It utilizes advanced algorithms to detect and monitor vehicles in real time,
+                            offering practical applications in traffic analysis, safety monitoring, and urban development.
+                        </p>
+                        <a href="https://github.com/SI-Grupa8/SI-grupa8" class="btn btn--line" target="_blank">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="layout-section" aria-labelledby="heading-experience">
+            <div class="container">
+                <h2 id="heading-experience" class="title--sm layout-section-title">Experience</h2>
+                <ul class="tags">
+                    <li class="tag">Tutoring</li>
+                    <li class="tag">Spring Boot</li>
+                    <li class="tag">JavaFX</li>
+                    <li class="tag">React</li>
+                    <li class="tag">JavaScript</li>
+                    <li class="tag">HTML</li>
+                    <li class="tag">CSS</li>
+                    <li class="tag">PostgreSQL</li>
+                    <li class="tag">MySQL</li>
+                    <li class="tag">JavaScript</li>
+                    <li class="tag">C++</li>
+                    <li class="tag">C</li>
+                    <li class="tag">Python</li>
+                    <li class="tag">TensorFlow.js</li>
+                    <li class="tag">Blender</li>
+                    <li class="tag">.NET</li>
+                </ul>
+            </div>
+        </section>
+        <section id="testimonials" class="layout-section" aria-labelledby="heading-testimonials">
+            <div class="container">
+                <h2 id="heading-testimonials" class="title--sm layout-section-title">
+                    Testimonials
+                </h2>
+                <div class="carousel">
+                    <button class="btn carousel-btn" id="left-button">
+                        <span id="left-arrow">&larr;</span>
+                    </button>
+                    <div class="testimonials">
+                        <figure class="testimonial">
+                            <blockquote class="text--sm">
+                                Kerim is an excellent tutor and has a great ability to transfer his knowledge to his clients. He played a significant role in my preparation for university and helped me get accepted.
+                            </blockquote>
+                            <figcaption>Hamza Alić</figcaption>
+                        </figure>
+                        <figure class="testimonial">
+                            <blockquote class="text--sm">
+                                I am very satisfied with working with Kerim. He showed dedication to making our work as efficient as possible. At the same time, he demonstrated excellent knowledge in his field.
+                            </blockquote>
+                            <figcaption>Nikola</figcaption>
+                        </figure>
+                        <figure class="testimonial">
+                            <blockquote class="text--sm">
+                                He explains in a simple and understandable way. The tutoring sessions were very effective. His knowledge of mathematics inspired me to successfully pass the exam. All praise!
+                            </blockquote>
+                            <figcaption>Iman Merdan</figcaption>
+                        </figure>
+                        <figure class="testimonial">
+                            <blockquote class="text--sm">
+                                We are satisfied with our cooperation with Kerim, who gave math lessons to our son. We believe he works well with children and has patience and understanding. He is always ready to help at any time.
+                            </blockquote>
+                            <figcaption>Nedžad and Azra</figcaption>
+                        </figure>
+                        <figure class="testimonial">
+                            <blockquote class="text--sm">
+                                As a math tutor, Kerim has the ability to present complex mathematical problems in a simple and easy-to-understand way. His patience and dedication to each student serve as motivation and support. He demonstrates exceptional flexibility by skillfully adapting his methods to the needs of the students. His passion for mathematics additionally inspired us to dedicate ourselves more to studying, and the atmosphere during lessons was always very positive.
+                            </blockquote>
+                            <figcaption>Tayra Muslija and Samna Kožljak</figcaption>
+                        </figure>
+                        <figure class="testimonial">
+                            <blockquote class="text--sm">
+                                Kerim Šljivo is a rare, responsible young man who is always ready to coordinate the tutoring schedule. He tutored my son, a ninth-grade elementary school student, in mathematics, and was also ready to assist with computer science and physics. We were very satisfied. From me, only words of praise, and I am very grateful for everything he did for us.
+                            </blockquote>
+                            <figcaption>Šejla Hiroš</figcaption>
+                        </figure>
+                        <figure class="testimonial">
+                            <blockquote class="text--sm">
+                                Professor Kerim is exceptionally skilled at explaining material and has extensive knowledge, which he can effectively transfer to students. His approach is very professional, and he is patient with students, which was ideal for my son, who studied under the IGCSE British curriculum. Professor Kerim encouraged my son to engage more and was one of the reasons he developed a love for computer science. I recommend Professor Kerim to all students who want to learn computer science, as well as to parents looking for a good tutor.
+                            </blockquote>
+                            <figcaption>Anonymous</figcaption>
+                        </figure>
+                        <figure class="testimonial">
+                            <blockquote class="text--sm">
+                                Working with you as a tutor was extremely helpful. Your ability to explain complex concepts clearly and accessibly significantly helped me improve my knowledge, even though I was learning everything in French. Also, your patience was wonderful. Thank you again for everything!
+                            </blockquote>
+                            <figcaption>Zarin Bajrić</figcaption>
+                        </figure>
+                        <figure class="testimonial">
+                            <blockquote class="text--sm">
+                                Working with Kerim helped me develop a new approach to solving math problems. He is systematic and clear.
+                            </blockquote>
+                            <figcaption>Anonymous</figcaption>
+                        </figure>
+                    </div>
+                    <button class="btn carousel-btn" id="right-button">
+                        <span id="right-arrow">&rarr;</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="hire-me" class="layout-section" aria-labelledby="heading-hireme">
+            <div class="container">
+                <h2 id="heading-hireme" class="title--sm layout-section-title">Hire Me</h2>
+                <div class="hire-form">
+                    <address>
+                        <div class="hire-line">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 2.5C10.1625 2.5 6.25 6.4125 6.25 11.25C6.25 17.8125 15 27.5 15 27.5C15 27.5 23.75 17.8125 23.75 11.25C23.75 6.4125 19.8375 2.5 15 2.5ZM15 14.375C13.275 14.375 11.875 12.975 11.875 11.25C11.875 9.525 13.275 8.125 15 8.125C16.725 8.125 18.125 9.525 18.125 11.25C18.125 12.975 16.725 14.375 15 14.375Z" fill="var(--light-icon)" />
+                            </svg>
+                            <div>
+                                <p class="text">Current location</p>
+                                <p class="text--bold">
+                                    Pijačna 114.<br />
+                                    Sarajevo, Bosnia and Herzegovina
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hire-line">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 5H5C3.625 5 2.5125 6.125 2.5125 7.5L2.5 22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5C27.5 6.125 26.375 5 25 5ZM25 10L15 16.25L5 10V7.5L15 13.75L25 7.5V10Z" fill="var(--light-icon)" />
+                            </svg>
+                            <div>
+                                <p class="text">Email</p>
+                                <a class="text--bold" href="mailto:ksljivo1@etf.unsa.ba">
+                                    ksljivo1@etf.unsa.ba
+                                </a>
+                            </div>
+                        </div>
+                    </address>
+                    <form netlify>
+                        <label for="hire-name" class="sr-only">Your name</label>
+                        <input id="hire-name" type="text" autocomplete="name" class="input" placeholder="Your name" name="name" />
+
+                        <label for="hire-email" class="sr-only">Your email</label>
+                        <input id="hire-email" type="email" autocomplete="email" class="input" placeholder="Your email" name="email" />
+
+                        <label for="hire-message" class="sr-only">Your message</label>
+                        <textarea id="hire-message" class="input" placeholder="Your message" name="message"></textarea>
+                        <div class="hire-action">
+                            <input type="submit" class="btn btn--raised" value="Send" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <div class="side">
+                        <img src="https://res.cloudinary.com/dbfn5lnvx/image/upload/v1648478885/learnhtmlcss/portfolio/logo.svg" alt="Sam Green logo" width="45" height="43" />
+                        <div>
+                            <p class="text--bold footer-name">&copy; 2024 Kerim Šljivo</p>
+                            <p class="footer-rights">
+                                <small class="text--sm">All rights reserved.</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script type="module" src="main.js" defer></script>
+</body>
+</html>

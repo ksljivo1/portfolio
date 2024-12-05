@@ -1,0 +1,51 @@
+.btn {
+    all: unset;
+    outline: revert;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    letter-spacing: 0.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: translate 180ms, opacity 180ms;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btn:active {
+    translate: 0.0625rem 0.0625rem;
+}
+
+.btn--nav {
+    color: var(--text-color);
+    padding: 0.75rem;
+}
+
+.btn--raised {
+    background-color: var(--primary);
+    color: var(--black);
+    padding: 0.75rem 3.3125rem 0.75rem 1.5rem;
+    background-image: url("https://res.cloudinary.com/dbfn5lnvx/image/upload/v1648478882/learnhtmlcss/portfolio/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: right 1.25rem center;
+}
+
+.btn--line {
+    color: var(--text-color);
+    padding: 0.625rem;
+}
+
+.btn--line::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    height: 0.25rem;
+    width: auto;
+    border: 0.0625rem solid var(--primary);
+    margin-top: 0.8rem;
+}
