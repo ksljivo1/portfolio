@@ -15,9 +15,7 @@ if (prefersLight) {
 }
 
 function setCarousel(allElements, index = 0) {
-    function fnLeft() {
-        console.log("radi li ovo")
-        index = (index + 1) % allElements.length
+    function shiftTestimonials() {
         for (let i = 0; i < allElements.length; i++) {
             allElements[i].style.translate = `-${index * 100}%`
             allElements[i].style.opacity = "0"
@@ -26,12 +24,13 @@ function setCarousel(allElements, index = 0) {
     }
 
     function fnRight() {
+        index = (index + 1) % allElements.length
+        shiftTestimonials();
+    }
+
+    function fnLeft() {
         index = index === 0 ? allElements.length - 1 : index - 1
-        for (let i = 0; i < allElements.length; i++) {
-            allElements[i].style.translate = `-${index * 100}%`
-            allElements[i].style.opacity = "0"
-        }
-        allElements[index].style.opacity = "1"
+        shiftTestimonials();
     }
 
     return {

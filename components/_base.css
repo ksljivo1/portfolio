@@ -19,6 +19,7 @@
 
 html.light-theme {
     background-color: var(--beige);
+    --helper: var(--beige);
     --text-color: var(--black);
     --gray-light: var(--gray-dark);
     --light-icon: var(--black);
@@ -33,6 +34,7 @@ body {
 
 html {
     background-color: var(--dark-blue);
+    --helper: var(--dark-blue);
     color: var(--text-color);
 }
 
