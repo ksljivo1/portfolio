@@ -1,0 +1,31 @@
+.layout-section-title {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.certificate-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 2rem;
+}
+
+.certificate-list li {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.certificate-list h3 {
+    font-size: 1.25rem;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.certificate-list a {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    text-decoration: underline;
+}
